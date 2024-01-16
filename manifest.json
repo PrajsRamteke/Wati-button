@@ -1,0 +1,78 @@
+{
+  "manifest_version": 3,
+  "name": "WATI-Button",
+  "version": "2.0.0",
+  "permissions": ["scripting", "activeTab"],
+  "icons": {
+    "16": "logo/logo-16.png",
+    "48": "logo/logo-48.png",
+    "128": "logo/logo-128.png"
+},
+  "host_permissions": [
+    "https://live-2846.wati.io/*",
+    "https://live-100327.wati.io/*",
+    "https://live-111031.wati.io/*",
+    "https://live-9590.wati.io/*",
+    "https://live-106416.wati.io/*",
+    "https://live-106418.wati.io/*",
+    "https://live-106410.wati.io/*",
+    "https://live-106421.wati.io/*",
+    "https://live-110947.wati.io/*",
+    "https://live-110949.wati.io/*",
+    "https://live-302010.wati.io/*",
+    "https://live-302011.wati.io/*",
+    "https://live-302012.wati.io/*",
+    "https://live-302013.wati.io/*",
+    "https://live-302014.wati.io/*",
+    "https://live-302015.wati.io/*",
+    "https://live-302016.wati.io/*",
+    "https://live-302017.wati.io/*",
+    "https://live-302018.wati.io/*",
+    "https://live-302019.wati.io/*",
+    "https://live-302020.wati.io/*",
+    "https://live-302234.wati.io/*",
+    "https://live-302235.wati.io/*",
+    "https://live-302236.wati.io/*",
+    "https://live-302237.wati.io/*",
+    "https://live-302238.wati.io/*"
+    ],
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://live-2846.wati.io/teamInbox/*",
+        "https://live-100327.wati.io/teamInbox/*",
+        "https://live-111031.wati.io/teamInbox/*",
+        "https://live-9590.wati.io/teamInbox/*",
+        "https://live-106416.wati.io/teamInbox/*",
+        "https://live-106418.wati.io/teamInbox/*",
+        "https://live-106410.wati.io/teamInbox/*",
+        "https://live-106421.wati.io/teamInbox/*",
+        "https://live-110947.wati.io/teamInbox/*",
+        "https://live-110949.wati.io/teamInbox/*",
+        "https://live-302010.wati.io/teamInbox/*",
+        "https://live-302011.wati.io/teamInbox/*",
+        "https://live-302012.wati.io/teamInbox/*",
+        "https://live-302013.wati.io/teamInbox/*",
+        "https://live-302014.wati.io/teamInbox/*",
+        "https://live-302015.wati.io/teamInbox/*",
+        "https://live-302016.wati.io/teamInbox/*",
+        "https://live-302017.wati.io/teamInbox/*",
+        "https://live-302018.wati.io/teamInbox/*",
+        "https://live-302019.wati.io/teamInbox/*",
+        "https://live-302020.wati.io/teamInbox/*",
+        "https://live-302234.wati.io/teamInbox/*",
+        "https://live-302235.wati.io/teamInbox/*",
+        "https://live-302236.wati.io/teamInbox/*",
+        "https://live-302237.wati.io/teamInbox/*",
+        "https://live-302238.wati.io/teamInbox/*"
+      ],
+      "js": ["content.js"]
+    }
+  ]
+}
