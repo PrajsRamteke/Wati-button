@@ -1,6 +1,3 @@
-/** @format */
-
-
 setInterval(function () {
   var chatInput = document.querySelector(".sc-jzgbtB.dRmhTs"); // .sc-jzgbtB.dRmhTs
   if (chatInput !== null) {
@@ -57,8 +54,7 @@ function createButton(text, data, index) {
 
   container.appendChild(button);
 
-  // var targetNode = document.querySelector(".sc-laTMn.kcXlau"); // .sc-bUrKqX.hWrzoq
-  var targetNode = document.querySelector(".sc-laTMn.kcXlau") || document.querySelector(".sc-bUrKqX.hWrzoq");
+  var targetNode = document.querySelector(".sc-fhYwyz.dBOxRe"); // full box
   if (targetNode) {
     targetNode.appendChild(container);
   }
@@ -77,65 +73,68 @@ function updateCode(data) {
 // Function to check if the desired div is present and run the code
 function checkDivAndRunCode() {
   // const targetNode = document.querySelector(".sc-laTMn.kcXlau"); //same || Done  sc-laTMn kcXlau
-  var targetNode = document.querySelector(".sc-laTMn.kcXlau") || document.querySelector(".sc-bUrKqX.hWrzoq");
+  var targetNode = document.querySelector(".sc-fhYwyz.dBOxRe");  // full box
 
 
   if (targetNode) {
     // Div is present, run the code
     createButton("Welcome", "You're welcome 😀 👍", 0);
-    createButton("Thanks", "Thank you so much😊😊🙏", 1);
+    createButton("Thanks", "Thank you for contacting us. If you have any further questions, feel free to reach out. Have a wonderful day!", 1);
     createButton(
-      "Hello",
-      "Hello, my name is Prajwal from Habuild. ",
+      "free vs paid",
+      "Our paid sessions are conducted Everyday online (all 7 days) and we provide other services like personal habit tracking, habit building, water reminder  physiotherapist, juice fast, mindful journaling and many more.\n\nHere's the link to check our membership plan pricing:\nhttps://habuild.in/membershipplan",
       2
       );
       createButton(
-        "Batchs",
-        "We have three morning batches and three evening batches: (IST)\n\n⏰ Batch 1: 6:30 AM - 7:15 AM\n⏰ Batch 2: 7:30 AM - 8:15 AM\n⏰ Batch 3: 8:30 AM - 9:15 AM\n\n⏰ Batch 4: 5:00 PM- 5:45 PM\n⏰ Batch 5: 6:00 PM - 6:45 PM\n⏰ Batch 6: 7:00 PM - 7:45 PM\n\nThe joining link for all batches is the same, and you can join any of the above 6 batches. All timings are in Indian Standard Time",
+        "Start later",
+        "Yes, it is possible after you make the payment, you will receive additional information form where you can change the joining date\n\nHere's the link to make the payment:\n\nhttps://habuild.in/membershipplan",
         3
       );
-    createButton(
-      "Dance-WC",
-      "Hello Habuilders😃\nGet fit with Trishala Bothra \n\n*Timings*\nMorning:\n⏰8:30 - 9:15 AM IST (Mor)\n\nEvening:\n⏰7:00 - 7:45 PM IST (Eve)\n⏰8:00 - 8:45 PM IST (Eve)\n\n*Session Format*\n🤸‍♀Stretching session : Every Monday, Wednesday, and Friday\n\n💃🏻Dance sessions : Every Tuesday, Thursday, and Sunday\n\nPlease join this whatsapp Community to get the joining link and updates:\n\n*Link:*\nhttps://i.habuild.in/dance-stretch-community",
-      4
-    );
-    createButton(
-      "Start-Later",
-      "Yes, it is possible after you make the payment, you will be redirected to a form where you can choose your Start date.\n\n*Here's the payment link:*\nhttps://i.habuild.in/membershipplan",
-      5
-    );
-    createButton(
-      "TQ",
-      "Thank you for your subscription  :)\n\nWe are excited to have you on board and start the journey for Yoga every day.\n\nClick here to check if you have received a confirmation of Payment:\n\nLink:➡️ wa.me/918600039721",
-      6
-    );
-    createButton(
-      "SS",
-      "Could you please share the screenshot of the payment made? Which has the date, time, and transaction id in it 🙏🙏",
-      8
-    );
-    createButton(
-      "UPIForm",
-      "*Thanks a lot for subscribing:* \n*Please fill this form to get the links:*\n\nhttps://habuild.in/memberpayment\n_Please reply back with a YES when done_ ",
-      10
-    );
-
-    createButton(
-      "Bank",
-      "HDFC A/C: 59203000100100\n\nIFSC Code: HDFC0004704\n\nName : Habuild Healthtech Pvt Ltd\n\nShare screenshot of transfer on 8600039721",
-      7
-    );
-    createButton(
-      "DanceLink",
-      "LIVE Dance and stretch Zumba session link \n\nhttps://i.habuild.in/dance-stretch-live",
-      5
-    );
-    createButton(
-      "CloseChat",
-      "Thank you for contacting us. If you have any further questions, feel free to reach out. Have a wonderful day!",
-      9
-    );
-
+      createButton(
+        "Gift Status",
+        "So sorry for the inconvenience please let us know your registered name and number for the challenge we will forward that to our concern team and they will look into that.\n\nEmail: referralgift@habuild.in\nContact Number: 917969213330 or wa.me/917969213330",
+        4
+      );
+      createButton(
+        "upgrade",
+        "Yes you can upgrade your subscription within a week from your dashboard.\n\nLogin to your dashboard using this link:\n\nhttps://me.habuild.in",
+        5
+      );
+      createButton(
+        "1-On-1",
+        "As our focus is Habit building we keep the session simple & as the number of people in session if more it is difficult to give personal attention during the session. However, if you have any queries you can ask on whatsapp or you can book a call with physiotherapist for an online consultation.",
+        6
+      );
+      createButton(
+        "certificate",
+        "Please go to your dashboard to download the certificate:\n\nLink: https://habit.yoga/profile",
+        7
+      );
+      createButton(
+        "Schedule",
+        "Monday- Breathing and Light Yoga\nTuesday- Lower Body\nWednesday-Upper Body\nThursday- Core and Laughter Yoga\nFriday-Flexibility\nSaturday- Stamina\nSunday- Surya Namaskars and Variations\n\nFirst 30 mins will be warm-ups, exercise and yoga according to the day wise schedule. The last 15 minutes each day is fixed for the 16 set of asanas.",
+        8
+      );
+      createButton(
+        "yoga query",
+        "You can ask your  problems and queries  on our official communication number which will be allocated to you after your payment is processed.",
+        9
+      );
+      createButton(
+        "attendance",
+        "We track your habits/attendance through your personal link. Please join through your personal link daily to mark attendance",
+        10
+      );
+      createButton(
+        "juice fast",
+        "Juice Fast is a form of detox. It is a powerful and effective way to keep the body's systems in check. Benefits of a 2 day Juice Fast:\n- increases beneficial gut bacteria,\n- clears skin,\n- improves heart health,\n- improves general well-being,\n- boosts levels of important vitamins and antioxidants, including folate, vitamin C, vitamin E, and beta carotene.\n\n You will also learn more about it in a guided orientation. Following which we will have meet up sessions, and access to video recipes, written recipes, PDF, FAQs will be provided.",
+        11
+      );
+      createButton(
+        "MJW",
+        "Mindful Journaling is a 5-day workshop that covers the importance of journaling as a self-care practise. In this workshop, you'll learn:\n- how to release stress and find emotional relief\n- how to improve self-awareness\n- how to rewire mind to build positivity\n- how to build a self care practise\n- how to make a journaling habit\n\nUsing these 5 tools will help you lead a calmer and happier life.",
+        12
+      );
     // Disconnect the observer after running the code
     observer.disconnect();
   }
